@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom"
 import Timer from './Timer/Timer'
 // import { GKQues, SportsQues, MathQues, ScienceQues } from "./index"
 
-
 const QuestionsPage = [
   {
       id: 1,
