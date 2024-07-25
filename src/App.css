@@ -1,0 +1,60 @@
+html {
+  /* background-image:url('https://t3.ftcdn.net/jpg/03/45/97/36/360_F_345973621_sMifpCogXNoIDjmXlbLwx1QZA5ZmQVl8.jpg');  */
+  background-color: white;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Css for timer */
+
+
+.app {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.time {
+  font-size: 18px;
+  margin: auto ;
+}
+
+.message {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    .questions {
+      height: 100% !important;
+      width: 100% !important;
+      display: grid !important;
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      margin: 0 10px 0 10px !important;
+    }
+}
+
+/* Css for Questions */
+
+.options input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.options label {
+  display: block;
+  padding: 4px 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 1px 1px #d3d3d3;
+}
+
+.options input:checked+label {
+  background-color: rgba(0, 0, 0, 0.2);
+}
