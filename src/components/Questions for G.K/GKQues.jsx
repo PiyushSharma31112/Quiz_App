@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GeneralKnowledge from "./GKdata"
+import {NavLink} from "react-router-dom"
 
 function GKQues() {
     const [data, setData] = useState(GeneralKnowledge)
@@ -49,14 +50,17 @@ function GKQues() {
     if(showResult) {
         return ( 
             <div className="w-full max-w-md p-8 bg-white mt-[10%] rounded-lg shadow-lg"> 
-                <h2 className='text-center text-xl font-semibold'>{score}/10</h2>
-                <div>
+                <h2 className='text-center text-xl font-semibold mb-5'>{score}/10</h2>
+                <div className='flex justify-between flex-col items-center gap-10'>
                     {data.map(({ question, answer, options }) => 
                         <div key={options} className='w-full'>
                             <h5>Q. {question}</h5>
                             <h5>Answer : {answer}</h5>
                         </div>
                     )}
+                    <NavLink to='/Questions' className="w-full py-2 mb-2 text-white bg-blue-500 rounded text-center hover:bg-blue-700">
+                        Back to Questions Page
+                    </NavLink>
                 </div>
             </div>
           )
@@ -92,8 +96,6 @@ function GKQues() {
                 onClick={handleOptionClick}>
                 Next
             </button>
-
-           
 
         </div>
     )
