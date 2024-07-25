@@ -14,7 +14,7 @@ function GKQues() {
     const [correctOption, setCorrectOption] = useState('')
     const [timer, setTimer] = useState(10)
     const [isChecked, setIsChecked] = useState(false)
-    // const [selectedOption, setSelectedOption] = useState()
+    const [selectedOption, setSelectedOption] = useState()
 
 
          // Functions
@@ -67,10 +67,16 @@ function GKQues() {
         
         <div className=' w-full flex items-center justify-between'>
             <h1 className='text-2xl font-bold p-2 '> Question: {currnetIndex + 1}/10</h1>
+            <div>
+                    Time left : <span className='text-red-500'> {timer}</span>s
+                </div>
         </div>
 
-        <h2 className="text-xl font-semibold mb-4">Q. {currentQuestion.question}</h2>
-        
+            <div className='flex justify-between items-center'>
+                <h2 className="text-xl font-semibold mb-4">Q. {currentQuestion.question}  </h2>
+                
+            </div>
+
         <div className="options">
 			<input type="radio" name="answer" id="a" className="radioBtn" onChange={isSelected}/>
 			<label htmlFor="a" id="optionA">{currentQuestion.options.a}</label>
