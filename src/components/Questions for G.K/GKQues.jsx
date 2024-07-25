@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import GeneralKnowledge from "./GKdata"
-import Result from '../Result/Result'
 
 function GKQues() {
     const [data, setData] = useState(GeneralKnowledge)
@@ -51,14 +50,14 @@ function GKQues() {
         return ( 
             <div className="w-full max-w-md p-8 bg-white mt-[10%] rounded-lg shadow-lg"> 
                 <h2 className='text-center text-xl font-semibold'>{score}/10</h2>
-                {/* <div>
+                <div>
                     {data.map(({ question, correctAns, options }) => 
                         <div key={options} className='w-full'>
                             <h5>Q. {question}</h5>
                             <h5>Answer : {correctAns}</h5>
                         </div>
                     )}
-                </div> */}
+                </div>
             </div>
           )
     }
@@ -94,12 +93,7 @@ function GKQues() {
                 Next
             </button>
 
-            {/* <div className={`text-center py-[100px] ${isOver ? 'block' : "hidden" } `}>
-                <h2>You Scored : <span className=''> {score} </span>/10</h2>
-                <button onClick={restart} className='px-[25px] py-[10px] bg-blue-500 text-white hover:bg-blue-700'>
-                    restart
-                </button>
-            </div> */}
+           
 
         </div>
     )
