@@ -7,7 +7,8 @@ const maths = [
             c: "8",
             d: "9",
         },
-        correctAns: "c" 
+        correctAns: "c",
+        answer: "8"
     },
     {
         question: "What is 10-4 ?",
@@ -17,7 +18,8 @@ const maths = [
             c: "7",
             d: "8",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "6"
     },
     {
         question: "What is 4x2 ?",
@@ -27,7 +29,9 @@ const maths = [
             c: "9",
             d: "10",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "8"
+
     },
     {
         question: "What is 16 ÷ 4 ?",
@@ -37,7 +41,9 @@ const maths = [
             c: "4",
             d: "5",
         },
-        correctAns: "c" 
+        correctAns: "c",
+        answer: "4"
+
     },
     {
         question: "What is  9 + 6?",
@@ -47,7 +53,8 @@ const maths = [
             c: "16",
             d: "17",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "15"
     },
     {
         question: "What is 12 - 5?",
@@ -57,7 +64,9 @@ const maths = [
             c: "8",
             d: "9",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "7"
+
     },
     {
         question: "What is  3 × 3? ",
@@ -67,7 +76,8 @@ const maths = [
             c: "9",
             d: "10",
         },
-        correctAns: "c" 
+        correctAns: "c",
+        answer: "9"
     },
     {
         question: "What is 18 ÷ 3? ",
@@ -77,7 +87,8 @@ const maths = [
             c: "7",
             d: "8",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "6"
     },
     {
         question: "What is 7 + 2 ",
@@ -87,7 +98,8 @@ const maths = [
             c: "10",
             d: "11",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "9"
     },
     {
         question: "What is  14 - 7?",
@@ -97,7 +109,8 @@ const maths = [
             c: "8",
             d: "9",
         },
-        correctAns: "b" 
+        correctAns: "b",
+        answer: "7"
     },
 ]
 

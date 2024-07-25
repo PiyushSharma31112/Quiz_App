@@ -7,7 +7,8 @@ const sports = [
             c: "Cricket",
             d: "Football",
         },
-        correctAns: "d"
+        correctAns: "d",
+        answer: "Football"
     },
     {
         question: "How many players are there on a standard soccer team?",
@@ -17,7 +18,8 @@ const sports = [
             c: "11",
             d: "12",
         },
-        correctAns: "c"
+        correctAns: "c",
+        answer: "11"
     },
     {
         question: "Which country won the FIFA World Cup in 2018?",
@@ -27,7 +29,8 @@ const sports = [
             c: "France",
             d: "Argentina",
         },
-        correctAns: "c"
+        correctAns: "c",
+        answer: "France"
     },
     {
         question: "In which sport would you use a racket?",
@@ -37,7 +40,8 @@ const sports = [
             c: "Tennis",
             d: "Boxing",
         },
-        correctAns: "c"
+        correctAns: "c",
+        answer: "Tennis"
     },
     {
         question: "How many points is a touchdown worth in American football?",
@@ -47,7 +51,8 @@ const sports = [
             c: "7",
             d: "3",
         },
-        correctAns: "b"
+        correctAns: "b",
+        answer: "6"
     },
     {
         question: "Which sport involves hitting a shuttlecock over a net?",
@@ -57,7 +62,9 @@ const sports = [
             c: "Volleyball",
             d: "Squash",
         },
-        correctAns: "b"
+        correctAns: "b",
+        answer: "Badminton"
+
     },
     {
         question: "What is the maximum number of players on a baseball team?",
@@ -67,7 +74,8 @@ const sports = [
             c: "10",
             d: "11",
         },
-        correctAns: "b"
+        correctAns: "b",
+        answer: "9"
     },
     {
         question: "In which sport would you perform a slam dunk?",
@@ -77,7 +85,8 @@ const sports = [
             c: "Hockey",
             d: "Volleyball",
         },
-        correctAns: "b"
+        correctAns: "b",
+        answer: "Basketball"
     },
     {
         question: "What is the term for a score of zero in tennis?",
@@ -87,7 +96,8 @@ const sports = [
             c: "Zero",
             d: "Blank",
         },
-        correctAns: "a"
+        correctAns: "a",
+        answer: "Love"
     },
     {
         question: "Which sport is known for the term 'hole-in-one'?",
@@ -97,7 +107,8 @@ const sports = [
             c: "Soccer",
             d: "Bowling",
         },
-        correctAns: "b"
+        correctAns: "b",
+        answer: "Golf"
     },
 ];
 
