@@ -11,7 +11,7 @@ const router = createBrowserRouter (
           <Route path='/' element = {<App />} >
               <Route path='' element = {<Home />}  />
               <Route path='/Questions' element = {<Questions />} />
-              <Route path='/Questions/Gk' element = {<GKQues  />} />
+              <Route path='/Questions/Gk' element = {<GKQues />} />
               <Route path='/Questions/science' element = {<ScienceQues />} />
               <Route path='/Questions/maths' element = {<MathQues />} />
               <Route path='/Questions/sports' element = {<SportsQues />} />

@@ -7,7 +7,7 @@ const GeneralKnowledge = [
             c:  "Paris",
             d:  "Berlin"
         },
-        correctAns : "c"
+        correctAns : "Paris"
     },
 
     {
@@ -18,7 +18,7 @@ const GeneralKnowledge = [
             c:  "J.K. Rowling",
             d:  "Mark Twain"
         },
-        correctAns : "b"
+        correctAns : "William Shakespeare"
     },
     {
         question: "Which planet is known as the Red Planet?",
@@ -28,7 +28,7 @@ const GeneralKnowledge = [
             c:  "Jupiter",
             d:  "Saturn"
         },
-        correctAns : "b"
+        correctAns : "Mars"
     },
     {
         question: "Who was the first President of the United States?",
@@ -38,7 +38,7 @@ const GeneralKnowledge = [
             c:  "Abraham Lincoln",
             d:  "John Adams"
         },
-        correctAns : "b"
+        correctAns : "George Washington"
     },
     {
         question: "What is the largest ocean on Earth?",
@@ -48,7 +48,7 @@ const GeneralKnowledge = [
             c:  " Arctic Ocean",
             d:  "Pacific Ocean"
         },
-        correctAns : "d"
+        correctAns : "Pacific Ocean"
     },
     {
         question: "Which element has the chemical symbol 'O'?",
@@ -58,7 +58,7 @@ const GeneralKnowledge = [
             c:  "Gold",
             d:  "Silver"
         },
-        correctAns : "b"
+        correctAns : "Oxygen"
     },
     {
         question: "Who discovered penicillin?",
@@ -68,7 +68,7 @@ const GeneralKnowledge = [
             c:  "Louis Pasteur",
             d:  "Issac Newton"
         },
-        correctAns : "b"
+        correctAns : "Alexder Fleming"
     },
     {
         question: "What is the hardest natural substance on Earth?",
@@ -78,7 +78,7 @@ const GeneralKnowledge = [
             c:  "Diamond",
             d:  "Platinum"
         },
-        correctAns : "c"
+        correctAns : "Diamond"
     },
     {
         question: "What is the main ingredient in traditional Japanese miso soup?",
@@ -88,7 +88,7 @@ const GeneralKnowledge = [
             c:  "Fish",
             d:  "Seaweed"
         },
-        correctAns : "a"
+        correctAns : "Soyabean"
     },
     {
         question: "Which is the smallest country in the world by land area?",
@@ -98,7 +98,7 @@ const GeneralKnowledge = [
             c:  "Liechtenstein",
             d:  "Vatican City"
         },
-        correctAns : "d"
+        correctAns : "Vatican City"
     },
 ]
 

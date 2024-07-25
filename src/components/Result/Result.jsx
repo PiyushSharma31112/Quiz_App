@@ -5,7 +5,7 @@ function Result({ score, question }) {
   return (
     <div className='w-full max-w-md p-8 bg-white rounded-lg shadow-lg text-center'>
         <h2 className='text-2xl font-semibold mb-4'>
-            Your Score: {score}/{question.length}
+            Your Score: {score}/10
         </h2>
 
         <h3 className='text-xl mb-4'>
