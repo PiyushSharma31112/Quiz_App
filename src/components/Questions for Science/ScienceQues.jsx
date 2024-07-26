@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import science from "./ScienceData"
+import {NavLink} from "react-router-dom"
 
 function ScienceQues() {
   const [data, setData] = useState(science)

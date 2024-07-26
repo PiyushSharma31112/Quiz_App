@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import maths from "./MathsData"
+import {NavLink} from "react-router-dom"
 
 function MathsQues() {
   const [data, setData] = useState(maths)

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import sports from "./SportsData"
+import {NavLink} from "react-router-dom"
 
 function SportsQues() {
   const [data, setData] = useState(sports)
