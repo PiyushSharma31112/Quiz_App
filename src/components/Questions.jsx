@@ -33,7 +33,7 @@ const QuestionsPage = [
 function Questions() {
   return (
     <>
-      <div className='w-full h-screen relative flex justify-center items-center'>
+      <div className='w-full h-screen relative flex justify-center items-center main-bg-page-question'>
        
         <div className=' questions grid grid-cols-2 bg-transparent backdrop:blur-sm w-[80%] h-[50%] rounded-2xl gap-10'>
             {
@@ -43,7 +43,7 @@ function Questions() {
                       {name} 
                     </h1>
 
-                    <NavLink to= {page} className='h-[50px] w-[100px] bg-[#ff0000] text-xl flex items-center justify-center py-2 px-5 rounded-xl font-semibold text-white'  >
+                    <NavLink to= {page} className='h-[50px] w-[100px] button text-xl flex items-center justify-center py-2 px-5 rounded-xl font-semibold text-white'  >
                         {button}
                     </NavLink>
                 </div>

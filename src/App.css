@@ -58,3 +58,22 @@ html {
 .options input:checked+label {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* main-bg-page-question */
+
+.main-bg-page-question {
+  background: linear-gradient(#d8c7ff, #19006C);
+}
+
+.button{
+  background-color: #553f9a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e2d71;
+  cursor: pointer;
+}
+
+/* for correct and wrong answer */

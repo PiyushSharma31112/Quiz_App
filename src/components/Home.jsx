@@ -6,11 +6,11 @@ function Home() {
 
   return (
 
-    <div className='home relative flex justify-center items-center w-screen h-screen flex-col'>
+    <div className='home relative flex justify-center items-center w-screen h-screen flex-colm main-bg-page-question'>
 
-      <h1 className='text-5xl text-center font-bold absolute top-20'>Quiz App</h1>
+      <h1 className='text-5xl text-white  text-center font-bold absolute top-20'>Quiz App</h1>
 
-      <div className='p-2 w-[100px] h-[50px] rounded-md bg-[#ff0000] text-white font-bold text-xl cursor-pointer '>
+      <div className='p-2 w-[100px] h-[50px] rounded-md bg-white font-bold text-xl cursor-pointer '>
 
 
             <NavLink to="/Questions" className="flex items-center justify-evenly" >
