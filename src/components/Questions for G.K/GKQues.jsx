@@ -8,45 +8,52 @@ function GKQues() {
     const [currentQuestion, setCurrentQuestion] = useState(data[currentIndex])
     const [score, setScore] = useState(0)
     const [timer, setTimer] = useState(10)
-    const [selectedOption, setSelectedOption] = useState(true)
+    const [selectedOption, setSelectedOption] = useState('')
+    const [isOptionDisabled, setIsOptionDisabled] = useState(false)
     const [showResult, setShowResult] = useState(false)
 
-    useEffect(() => {
-        const countdown = setInterval(() => {
-            if (timer === 0) {
-                setCurrentIndex(prevIndex => prevIndex + 1)
-                setCurrentQuestion(data[currentIndex + 1])
-                setTimer(10)
-                setSelectedOption('')
-            } else {
-                setTimer(prevTimer => prevTimer - 1)
-            }
-        }, 1000)
+   
+  useEffect(() => {
+    const countdown = setInterval(() => {
+      if (timer === 0) {
+        handleNextQuestion()
+      } else {
+        setTimer(prevTimer => prevTimer - 1)
+      }
+    }, 1000)
 
-        return () => clearInterval(countdown)
-    }, [timer, currentIndex, data])
+    return () => clearInterval(countdown)
+  }, [timer])
 
-    const handleOptionClick = () => {
-        if (selectedOption === currentQuestion.correctAns) {
-            setScore(score + 1)
-        }
+  useEffect(() => {
+    setCurrentQuestion(data[currentIndex])
+    setSelectedOption('')  // Reset selected option on question change
+    setIsOptionDisabled(false) // Re-enable options for the new question
+  }, [currentIndex, data])
 
-        if (currentIndex < 9) {
-            setCurrentIndex(currentIndex + 1)
-            setCurrentQuestion(data[currentIndex + 1])
-            setTimer(10)
-            setSelectedOption('')
+  const handleOptionClick = (e) => {
+    const selectedValue = e.target.value
+    setSelectedOption(selectedValue)
+    setIsOptionDisabled(true)  // Disable options after selection
 
-        } else {
-            console.log(score)
-            setShowResult(true)
-        }
+    if (selectedValue === currentQuestion.correctAns) {
+      setScore(score + 1)
     }
 
-    const isSelected = (e) => {
-        setSelectedOption(e.target.id)
-    }
+    // Move to the next question after a short delay (e.g., 1 second)
+    setTimeout(() => {
+      handleNextQuestion()
+    }, 1000)
+  }
 
+  const handleNextQuestion = () => {
+    if (currentIndex < data.length - 1) {
+      setCurrentIndex(currentIndex + 1)
+      setTimer(10)
+    } else {
+      setShowResult(true)
+    }
+  }
     if(showResult) {
         return ( 
             <div className="w-full max-w-md p-8 bg-white mt-[10%] rounded-lg shadow-lg"> 
@@ -81,14 +88,51 @@ function GKQues() {
             </div>
 
             <div className="options">
-                <input type="radio" name="answer" id="a" className="radioBtn" onChange={isSelected} />
-                <label htmlFor="a" id="optionA" >{currentQuestion.options.a}</label>
-                <input type="radio" name="answer" id="b" className="radioBtn" onChange={isSelected} />
-                <label htmlFor="b" id="optionB">{currentQuestion.options.b}</label>
-                <input type="radio" name="answer" id="c" className="radioBtn" onChange={isSelected} />
-                <label htmlFor="c" id="optionC">{currentQuestion.options.c}</label>
-                <input type="radio" name="answer" id="d" className="radioBtn" onChange={isSelected} />
-                <label htmlFor="d" id="optionD">{currentQuestion.options.d}</label>
+            <input
+              type="radio"
+              name="answer"
+              id="a"
+              value="a"
+              checked={selectedOption === "a"}
+              className="radioBtn"
+              onChange={handleOptionClick}
+              disabled={isOptionDisabled}  // Disable option after selection
+            />
+                <label htmlFor="a">{currentQuestion.options.a}</label>
+
+                <input
+                  type="radio"
+                  name="answer"
+                  id="b"
+                  value="b"
+                  checked={selectedOption === "b"}
+                  className="radioBtn"
+                  onChange={handleOptionClick}
+                  disabled={isOptionDisabled}  // Disable option after selection
+                />
+                <label htmlFor="b">{currentQuestion.options.b}</label>
+                 <input
+                  type="radio"
+                  name="answer"
+                  id="c"
+                  value="c"
+                  checked={selectedOption === "c"}
+                  className="radioBtn"
+                  onChange={handleOptionClick}
+                  disabled={isOptionDisabled}  // Disable option after selection
+                />
+                <label htmlFor="c">{currentQuestion.options.c}</label>
+                <input
+                  type="radio"
+                  name="answer"
+                  id="d"
+                  value="d"
+                  checked={selectedOption === "d"}
+                  className="radioBtn"
+                  onChange={handleOptionClick}
+                  disabled={isOptionDisabled}  // Disable option after selection
+                />
+                <label htmlFor="d">{currentQuestion.options.d}</label>
             </div>
 
             <button
