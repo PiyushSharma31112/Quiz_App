@@ -38,6 +38,8 @@ html {
       display: grid !important;
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
       margin: 0 10px 0 10px !important;
+      padding: 5px ;
+      place-items: center;
     }
 }
 
