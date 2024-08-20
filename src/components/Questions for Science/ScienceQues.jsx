@@ -42,7 +42,7 @@ function ScienceQues() {
     // Move to the next question after a short delay (e.g., 1 second)
     setTimeout(() => {
       handleNextQuestion()
-    }, 1000)
+    }, 500)
   }
 
   const handleNextQuestion = () => {
