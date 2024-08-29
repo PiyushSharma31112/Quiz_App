@@ -33,11 +33,11 @@ html {
 
 @media screen and (max-width: 769px) {
     .questions {
-      height: 100% !important;
-      width: 100% !important;
+      height: 90% !important;
+      width: 90% !important;
       display: grid !important;
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-      margin: 0 10px 0 10px !important;
+      margin: 10px !important;
       padding: 5px ;
       place-items: center;
     }
@@ -79,3 +79,11 @@ html {
 }
 
 /* for correct and wrong answer */
+
+.correct {
+    color: rgb(18, 160, 18);
+}
+
+.wrong {
+    color: red;
+}
