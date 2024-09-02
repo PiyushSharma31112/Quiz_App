@@ -40,9 +40,9 @@ function GKQues() {
       }
   
       // Move to the next question after a short delay (e.g., 1 second)
-      setTimeout(() => {
-        handleNextQuestion()
-      }, 500)
+      // setTimeout(() => {
+      //   handleNextQuestion()
+      // }, 500)
     }
   
     const handleNextQuestion = () => {
@@ -93,7 +93,7 @@ function GKQues() {
               id="a"
               value="a"
               checked={selectedOption === "a"}
-              className="radioBtn"
+              className="radioBtn cursor-pointer"
               onChange={handleOptionClick}
               disabled={isOptionDisabled}  // Disable option after selection
             />

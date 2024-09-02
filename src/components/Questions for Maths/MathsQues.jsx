@@ -40,9 +40,9 @@ function MathsQues() {
     }
 
     // Move to the next question after a short delay (e.g., 1 second)
-    setTimeout(() => {
-      handleNextQuestion()
-    }, 500)
+    // setTimeout(() => {
+    //   handleNextQuestion()
+    // }, 500)
   }
 
   const handleNextQuestion = () => {
