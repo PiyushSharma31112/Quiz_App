@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Routes } from "react-router-dom"
 import {Home, Questions, GKQues, ScienceQues, SportsQues, MathQues} from './components/index.js'
-import { GeneralKnowledge, science, maths, sports } from "./components/index.js"
+// import { GeneralKnowledge, science, maths, sports } from "./components/index.js"
 
 const router = createBrowserRouter (
       createRoutesFromElements(

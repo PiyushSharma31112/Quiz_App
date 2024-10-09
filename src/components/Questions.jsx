@@ -39,7 +39,7 @@ function Questions() {
             {
               QuestionsPage.map(( { id, name, page, button } ) => (
                 <div className='h-auto w-[400px] flex flex-col gap-4 justify-center items-center rounded-lg bg-white border-2 shadow-lg backdrop:blur-sm p-1 ' key={id}>
-                    <h1 className='font-semibold text-center text-blue-800 text-2xl'> 
+                    <h1 className='font-semibold text-center text-black text-2xl'> 
                       {name} 
                     </h1>
 

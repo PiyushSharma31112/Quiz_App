@@ -3,6 +3,10 @@ html {
   background-color: white;
 }
 
+/* body {
+  background-color: #212121;
+} */
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -64,17 +68,12 @@ html {
 /* main-bg-page-question */
 
 .main-bg-page-question {
-  background: linear-gradient(#d8c7ff, #19006C);
+  background-color: #212121;
 }
 
 .button{
-  background-color: #553f9a;
+  background-color: #212121;
   color: #fff;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #3e2d71;
   cursor: pointer;
 }
 

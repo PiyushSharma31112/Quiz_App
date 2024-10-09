@@ -65,7 +65,7 @@ function GKQues() {
                 <h5>Answer : {answer}</h5>
               </div>
             )}
-            <NavLink to='/Questions' className="w-full py-2 mb-2 text-white bg-blue-500 rounded text-center hover:bg-blue-700">
+            <NavLink to='/Questions' className="w-full py-2 mb-2 text-white bg-[#212121] rounded text-center">
               Back to Questions Page
             </NavLink>
           </div>
